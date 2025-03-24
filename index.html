@@ -1,47 +1,423 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dhruval Padia - Resume</title>
+    <meta name="description" content="Dhruval Padia - Computer Science Portfolio">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dhruval Padia | Software Developer</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
-    <div class="container">
-        <header>
-            <h1>Dhruval Padia</h1>
-            <p class="location">Hyderabad, India | <a href="tel:9867172110">9867172110</a></p>
-            <div class="links">
-                <a href="https://dhruvalpadia.site" target="_blank">Portfolio</a>
-            </div>
-        </header>
 
-        <section>
-            <h2>About Me</h2>
-            <p>Software developer with a passion for AI, backend development, and NLP. Experienced in building real-world projects and exploring emerging technologies.</p>
-        </section>
-
-        <section>
-            <h2>Skills</h2>
-            <div class="skills">
-                <span>Python</span> <span>JavaScript</span> <span>Flask</span> <span>Django</span>
-                <span>Node.js</span> <span>Git</span> <span>Linux</span> <span>AWS</span>
-            </div>
-        </section>
-
-        <section>
-            <h2>Experience</h2>
-            <p><strong>Vice President</strong>, Code{X} - Woxsen University</p>
-        </section>
-
-        <section>
-            <h2>Projects</h2>
-            <ul>
-                <li><strong>EventNet</strong> - Secure event networking platform</li>
-                <li><strong>WitWeb</strong> - NLP-powered research tool</li>
-                <li><strong>GitChat</strong> - AI-driven GitHub assistant</li>
+<body class="container">
+    <header>
+        <nav class="navbar">
+            <div class="logo">DP</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
             </ul>
+            <div id="theme-switch" class="switch-container">
+                <div class="sun"></div>
+                <label class="switch">
+                    <input type="checkbox" id="themeSwitch" aria-label="Theme switch">
+                    <span class="slider round"></span>
+                </label>
+                <div class="moon"></div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="landing-screen">
+        <section id="home" class="home">
+            <div class="home-content">
+                <p class="home-greeting">Hello, I'm</p>
+                <h1 class="home-text">
+                    <span class="my-name">Dhruval Padia</span>
+                </h1>
+                <p class="home-subtitle">Software Developer | BTech CS '26</p>
+                <p class="home-description">
+                    Passionate about creating innovative solutions with tech. Focused on developing scalable products with modern technologies.
+                </p>
+                <div class="home-icon-container">
+                    <a class="home-social-icon" aria-label="Email" href="mailto:padiadhruval@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a class="home-social-icon" aria-label="Linkedin" href="https://www.linkedin.com/in/dhruvalpadia" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="home-social-icon" aria-label="Github" href="https://github.com/dhruval30" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a class="home-social-icon" aria-label="Website" href="https://dhruvalpadia.site" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-globe"></i>
+                    </a>
+                </div>
+                <div class="cta-buttons">
+                    <a class="primary-btn" href="#projects">View Projects</a>
+                    <a class="secondary-btn" href="latestCV.pdf" download>
+                        <i class="fas fa-download"></i> Resume
+                    </a>
+                </div>
+            </div>
+            
         </section>
     </div>
+
+    <section id="about" class="section-container">
+        <div class="section-header">
+            <h2 class="section-heading">About Me</h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="about-content">
+            <div class="about-text">
+                <p class="about-paragraph">
+                    A highly motivated student with a strong focus on computer science, software development, algorithms,
+                    and emerging technologies. Experienced in working on complex projects, exploring new frameworks,
+                    and implementing innovative solutions.
+                </p>
+                <p class="about-paragraph">
+                    My days are spent tinkering with code, pushing the limits of what's possible, and discovering latest technologies. 
+                    I'm drawn to exploring cutting-edge technologies and tools, always seeking out opportunities to learn and grow.
+                </p>
+                <p class="about-paragraph">
+                    Passionate about learning, problem-solving, and contributing to collaborative development environments. I enjoy collaborating with others to brainstorm innovative solutions and share insights.
+                </p>
+                <div class="about-details">
+                    <div class="detail-item">
+                        <span class="detail-icon"><i class="fas fa-map-marker-alt"></i></span>
+                        <span class="detail-text">Hyderabad, India</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-icon"><i class="fas fa-phone"></i></span>
+                        <span class="detail-text">9867172110</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-icon"><i class="fas fa-envelope"></i></span>
+                        <span class="detail-text">padiadhruval@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section-container">
+        <div class="section-header">
+            <h2 class="section-heading">Experience</h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="experience-content">
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div class="experience-title-container">
+                        <h3 class="experience-title">Vice President</h3>
+                        <p class="experience-company">Code{X} - The Programming Club</p>
+                    </div>
+                    <div class="experience-duration">June 2024 - Present</div>
+                </div>
+                <div class="experience-location">
+                    <i class="fas fa-map-marker-alt"></i> Woxsen University, Hyderabad
+                </div>
+                <ul class="experience-description">
+                    <li>Managed projects, organized workshops, hackathons, and coding competitions</li>
+                    <li>Oversaw operations, team coordination, and event execution</li>
+                    <li>Fostered innovation and growth within the club community</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section-container">
+        <div class="section-header">
+            <h2 class="section-heading">Projects</h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="project-grid">
+            <!-- SpeakSync -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h3 class="project-title">SpeakSync</h3>
+                    <span class="project-badge">Current</span>
+                </div>
+                <p class="project-description">
+                    Real-time speech translation system with synchronized visual cues, enabling seamless multilingual communication for global collaboration.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">NLP</span>
+                    <span class="tech-tag">Web Audio API</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <!-- GitChat -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h3 class="project-title">GitChat</h3>
+                    <span class="project-badge">Completed</span>
+                </div>
+                <p class="project-description">
+                    Tool integrating GitHub API and OpenAI API for conversational interactions with repositories, streamlining code review and collaboration.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">GitHub API</span>
+                    <span class="tech-tag">OpenAI API</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <!-- DocDialog -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h3 class="project-title">DocDialog</h3>
+                    <span class="project-badge">Ongoing</span>
+                </div>
+                <p class="project-description">
+                    AI-driven document processing tool for natural language interaction with PDF, CSV, and JSON files, enhancing data analysis and accessibility.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">NLP</span>
+                    <span class="tech-tag">Flask</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <!-- EventNet -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h3 class="project-title">EventNet</h3>
+                    <span class="project-badge">Completed</span>
+                </div>
+                <p class="project-description">
+                    Secure event networking platform with authentication and MongoDB for user credential management, integrated with LinkedIn profiles for optimal user matching.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">MongoDB</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <!-- WitWeb -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h3 class="project-title">WitWeb</h3>
+                    <span class="project-badge">Completed</span>
+                </div>
+                <p class="project-description">
+                    NLP-based research tool implementing various models (OpenAI, Llama2, Mistral) for text analysis with web scraping for relevant article retrieval.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">BeautifulSoup</span>
+                    <span class="tech-tag">NLP Models</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <!-- University Event Website -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h3 class="project-title">University Event Website</h3>
+                    <span class="project-badge">Completed</span>
+                </div>
+                <p class="project-description">
+                    Developed and deployed a website for a university event, handling 700+ registrations with secure authentication and a seamless user experience.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">HTML/CSS</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">Firebase</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section-container">
+        <div class="section-header">
+            <h2 class="section-heading">Skills</h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="skills-container">
+            <div class="skills-category">
+                <h3 class="category-title">Programming Languages</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-python"></i></div>
+                        <div class="skill-name">Python</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-js"></i></div>
+                        <div class="skill-name">JavaScript</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-java"></i></div>
+                        <div class="skill-name">Java</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-code"></i></div>
+                        <div class="skill-name">Elixir</div>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-category">
+                <h3 class="category-title">Frameworks & Libraries</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                        <div class="skill-name">Node.js/Express</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-python"></i></div>
+                        <div class="skill-name">Flask/Django</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                        <div class="skill-name">PyTorch</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                        <div class="skill-name">TensorFlow</div>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-category">
+                <h3 class="category-title">Tools & Technologies</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-aws"></i></div>
+                        <div class="skill-name">AWS</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                        <div class="skill-name">Git & GitHub</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-database"></i></div>
+                        <div class="skill-name">MongoDB</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-database"></i></div>
+                        <div class="skill-name">DBMS</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-linux"></i></div>
+                        <div class="skill-name">Linux</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-terminal"></i></div>
+                        <div class="skill-name">Bash</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-code"></i></div>
+                        <div class="skill-name">VS Code</div>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-category">
+                <h3 class="category-title">Soft Skills</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-comments"></i></div>
+                        <div class="skill-name">Communication</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-users"></i></div>
+                        <div class="skill-name">Leadership</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-tasks"></i></div>
+                        <div class="skill-name">Management</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="section-container">
+        <div class="section-header">
+            <h2 class="section-heading">Education</h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="education-content">
+            <div class="education-card">
+                <div class="education-header">
+                    <div class="education-degree">
+                        <h3 class="education-title">Bachelor of Technology</h3>
+                        <p class="education-major">Computer Science and Engineering</p>
+                    </div>
+                    <div class="education-duration">2022 - 2026</div>
+                </div>
+                <div class="education-institution">
+                    <i class="fas fa-university"></i> Woxsen University, Hyderabad
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements" class="section-container">
+        <div class="section-header">
+            <h2 class="section-heading">Achievements</h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="achievements-content">
+            <div class="achievement-card">
+                <div class="achievement-icon">
+                    <i class="fas fa-trophy"></i>
+                </div>
+                <div class="achievement-info">
+                    <h3 class="achievement-title">1st Runner-Up at Innoverse-12</h3>
+                    <p class="achievement-description">
+                        Won ₹15,000 for developing a meeting assistant with transcription, speaker diarization, action item extraction, summarization, sentiment analysis, and a productivity dashboard.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <p class="footer-text">© 2025 Dhruval Padia. All Rights Reserved.</p>
+            </div>
+            <div class="footer-social">
+                <a href="mailto:padiadhruval@gmail.com" class="footer-icon"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/dhruvalpadia/" target="_blank" rel="noopener noreferrer" class="footer-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/dhruval30" target="_blank" rel="noopener noreferrer" class="footer-icon"><i class="fab fa-github"></i></a>
+                <a href="https://dhruvalpadia.site" target="_blank" rel="noopener noreferrer" class="footer-icon"><i class="fas fa-globe"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
 </body>
+
 </html>
